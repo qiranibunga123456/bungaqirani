@@ -1,0 +1,10 @@
+	SELECT
+	Dosen.id_dosen,
+	Dosen.nama_dosen AS dosen,
+	Mahasiswa.name_mahasiswa AS mahasiswa
+FROM
+	Dosen
+	INNER JOIN
+	Mahasiswa
+WHERE
+	Dosen.id_dosen = mahasiswa.id_mahasiswa
