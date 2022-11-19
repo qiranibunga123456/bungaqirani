@@ -1,0 +1,5 @@
+NSERT INTO Mahasiswa(name_mahasiswa) VALUES('Ronaldo'),('Messi');
+
+INSERT INTO Dosen(nama_dosen) VALUES('Ronaldo'),('Messi');
+
+INSERT INTO Matakuliah(nama_matakuliah) VALUES('basis data'),('pbo');
