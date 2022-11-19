@@ -1,0 +1,10 @@
+SELECT
+	Mahasiswa.id_mahasiswa,
+	Mahasiswa.name_mahasiswa AS mhs,
+	Matakuliah.nama_Matakuliah
+FROM
+	Mahasiswa
+	INNER JOIN 
+	Matakuliah
+WHERE 
+	Mahasiswa.id_mahasiswa = Matakuliah.id_matkul
