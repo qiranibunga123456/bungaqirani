@@ -1,0 +1,42 @@
+public class nilai {
+    private int nilaiku;
+    
+    public String Nama;
+    public String NIM;
+    
+    
+    public void setNilai (int nilai){
+                nilaiku=nilai;
+    }
+    public int getNilai(){
+                return nilaiku;
+    }
+
+}
+public class nilaiTest {
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        nilai Biodata = new nilai();
+        Biodata.Nama = “BUNGA”;
+        Biodata.NIM = “20210801297”;
+        System.out.println(“Nama  = “+ Biodata.Nama);
+        System.out.println(“NIM   = “+ Biodata.NIM);
+
+    }
+
+}
+
+ 
+
+Maka hasilnya akan seperti dibawah ini:
+
+NAMA: BUNGA
+NIM: 20210801297
+
+
+
+
