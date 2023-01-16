@@ -1,0 +1,25 @@
+public class ReportService {
+
+  private final ReportClient reportClient;
+
+  public Report getReportV1(String email, String reportName) {
+    return reportClient.getReport(email, reportName);
+  }
+}
+public class UserService {
+
+  private final UserRepository userRepository;
+
+  public User getUserV1(String userId) {
+    return userRepository.getUser(userId).get();
+  }
+  public class ReportController {
+
+  private final ReportService reportService;
+  private final UserService userService;
+
+  @GetMapping("/report")
+  public Report getReport(@RequestParam String userId, @RequestParam String reportName) {
+    User user = userService.getUserV1(userId);
+    return reportService.getReportV1(user.email(), reportName);
+  }
